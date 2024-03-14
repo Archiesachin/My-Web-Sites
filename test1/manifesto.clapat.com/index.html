@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+		
+		ga('create', 'code_here', 'auto');
+		ga('send', 'pageview');
+	</script>
+    
+    <title>Snoozz Productions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Download the best Creative Portfolio HTML Template in 2023" />
+    <meta name="author" content="ClaPat Studio">
+    <meta charset="UTF-8" />    
+    <link rel="icon" type="image/ico" href="images/SNOOZZ LOGO_white.png" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"> 
+    
+    
+<style>
+    :root {
+  --color-text: navy;
+  --color-bg: papayawhip;
+  --color-bg-accent: #ecdcc0;
+  --size: clamp(10rem, 1rem + 40vmin, 30rem);
+  --gap: calc(var(--size) / 14);
+  --duration: 60s;
+  --scroll-start: 0;
+  --scroll-end: calc(-100% - var(--gap));
+}
+
+      .marquee {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+
+}
+
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll-x var(--duration) linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__group {
+    animation-play-state: paused;
+  }
+}
+
+
+.marquee--reverse .marquee__group {
+  animation-direction: reverse;
+  animation-delay: -3s;
+}
+
+@keyframes scroll-x {
+  from {
+    transform: translateX(var(--scroll-start));
+  }
+  to {
+    transform: translateX(var(--scroll-end));
+  }
+}
+
+
+/* Element styles */
+.marquee svg {
+  display: grid;
+  place-items: center;
+  width: var(--size);
+  fill: var(--color-text);
+  background: var(--color-bg-accent);
+  aspect-ratio: 16/9;
+  padding: calc(var(--size) / 10);
+  border-radius: 0.5rem;
+}
+
+
+/* Parent wrapper */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  margin: auto;
+  max-width: 100vw;
+}
+
+</style>
+    
+    
+
+</head>
+
+
+
+<body class="hidden hidden-ball smooth-scroll uppercase-titles" data-primary-color="#8c6144">
+	<main>		
+        <!-- Preloader -->
+        <div class="preloader-wrap" data-centerLine="Loading">
+            <div class="outer">
+                <div class="inner">                    
+                    <div class="trackbar">
+                    	<div class="preloader-intro">
+                        	<span>Rolling</span>
+                        </div>
+                        <div class="loadbar"></div>
+                        <div class="percentage-wrapper"><div class="percentage" id="precent"></div></div>
+                    </div>
+                    
+                    <div class="percentage-intro">Please wait, camera is rolling</div>                     
+                </div>
+            </div>
+        </div>
+        <!--/Preloader -->     
+        
+        <div class="cd-index cd-main-content">
+    
+        <!-- Page Content -->
+        <div id="page-content" class="light-content" data-bgcolor="#0c0c0c">
+            
+            <!-- Header -->
+            <header class="fullscreen-menu invert-header" data-menucolor="#0c0c0c">
+                <div id="header-container">
+                
+                
+                <!-- Logo -->
+               <div id="logo" class="hide-ball">
+                    <a class="ajax-link" data-type="page-transition" href="index.html">
+                        <img class="black-logo" src="images/Snoozz Productios round logo Green.png" alt="ClaPat Logo" style="width:60px; height:60px">
+                        <img class="white-logo" src="images/Snoozz Productios round logo white.png" alt="ClaPat Logo" style="width:60px; height:60px">
+                    </a>
+                </div>
+                <!--/Logo -->
+                            
+                
+                <!-- Navigation -->
+                <nav> 
+                	<div class="nav-height">
+                        <div class="outer">
+                            <div class="inner">           
+                                <ul data-breakpoint="10025" class="flexnav">
+                                    <li class="link menu-timeline"><a class="ajax-link active" data-type="page-transition" href="index.html"><div class="before-span"><span data-hover="Home">Home</span></div></a></li>
+                                    <li class="link menu-timeline"><a class="" href="about.html"><div class="before-span"><span data-hover="Life @ Snoozz">Life At Snoozz</span></div></a></li>
+                                    <li class="link menu-timeline"><a class="" href="index-showcase-grid.html"><div class="before-span"><span data-hover="Our Projects">Portfolio</span></div></a></li>
+                                    <li class="link menu-timeline"><a class="" href="blog.html"><div class="before-span"><span data-hover="Our Projects">Blogs</span></div></a></li>
+                                    <li class="link menu-timeline"><a class="" href="contact.html"><div class="before-span"><span data-hover="Contact Us">Contact Us</span></div></a></li>
+                                </ul>            
+                            </div>
+                        </div> 
+                    </div>          
+                </nav>
+                <!--/Navigation -->
+                
+                
+                <!-- Menu Burger -->
+                <div class="button-wrap right menu burger-lines">
+                    <div class="icon-wrap parallax-wrap">
+                        <div class="button-icon parallax-element">
+                            <div id="burger-wrapper">
+                                <div id="menu-burger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-text sticky right"><span data-hover="Menu">Menu</span></div> 
+                </div>
+                <!--/Menu Burger -->
+            
+                </div>
+            </header>
+            <!--/Header -->
+            
+            
+            
+            <!-- Content Scroll -->
+            <div id="content-scroll">
+            
+            
+                <!-- Main -->
+                <div id="main">
+                
+                    <!-- Hero Section -->
+                    <div id="hero">
+                        <div id="hero-styles">
+                            <div id="hero-caption" class="content-full-width no-padding-bottom text-align-center subtitle-padding-left">
+                                <div class="inner">                                    
+                                    <h1 class="hero-title caption-timeline"><span>Hit Snoozz </span><span><em> It's Showtime ! </em></span> </h1>
+                                     
+                                </div>
+                            </div>                                  
+                        </div>
+                    </div>                      
+                    <!--/Hero Section -->   
+                         
+                    
+                    <!-- Main Content -->
+                    <div id="main-content">
+                        <!-- Main Page Content -->
+                        <div id="main-page-content" class="content-full-width">
+                            
+                            
+                            
+                            <!-- Row -->
+                            <div class="content-row dark-section fadeout-element" data-bgcolor="#0c0c0c">
+                            
+                            	<div class="clipped-image-wrapper">
+                                
+                                	<div class="clipped-image-pin">                                    	
+                                        <div class="clipped-image">
+                                            <img src="images/about.jpg" alt="Image Title">
+                                            <div class="content-video-wrapper">
+                                                <video autoplay loop muted playsinline class="bgvid">
+                                                    <source src="images/HomePage Snoozznproductions.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                            <div class="clipped-image-gradient"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="clipped-image-content text-align-center content-full-width">
+                                		<h2 class="has-mask-fill">It’s time to wake up<br> to phenomenal storytelling...</h2>
+                                        <hr>
+                                    </div>
+                                
+                                </div>
+                                
+                                
+                                
+                                <div class="one_fourth">
+                                	<p class="has-mask-fill no-margins"></p>
+                                </div>
+                                
+                                <div class="one_fourth">
+                                	<p class="has-mask-fill no-margins" style="font-size: 20px; font-weight: bold;">Snoozz Productions</p>
+                                </div>
+                                
+                                <div class="one_half last">
+                                	<p class="has-opacity bigger">Have you ever wished you had a fairy godmother to wave her magic wand and take care of all your marketing worries? Well, Snoozz Productions is here to your rescue!</p>
+                                	<p class="has-opacity bigger">We're a 360-degree marketing and advertising agency that offers a full range of services, from strategy planning and video production to photography and social media marketing. We know how to put your marketing on autopilot so you can relax and focus on what's important: running your business.</p>
+
+
+                                    
+                                    
+                                    
+                                    <div class="button-wrap right button-link large-btn has-animation">
+                                        <div class="icon-wrap parallax-wrap">
+                                            <div class="button-icon parallax-element">
+                                                <a href="about.html"><i class="fa-solid fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                        <a target="_blank" href="about.html"><div class="button-text sticky right">
+                                        	<span data-hover="Learn More">Learn More</span></div>
+                                        </a> 
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div> 
+                            <!--/Row -->
+                            
+                            
+                            
+                            
+                            <!-- Row -->
+                            <div class="content-row light-section text-align-center change-header-color" data-bgcolor="#f9f9f9" style="padding-top: 50px;">
+                            	
+                                <h4><em>Portfolio</em></h4>
+                                <p>Watch how we capture the heartbeat of brands,</p> 
+                                <p style="margin-top:-15px">the magic of moments, and the soul of every frame.</p>
+                                <hr>
+                                
+                            </div> 
+                            <!--/Row -->
+                            
+                            
+                            <!-- Row -->
+                            <div class="content-row light-section change-header-color" data-bgcolor="#f9f9f9">
+                                
+                                <!-- Collage -->
+                                <div class="justified-grid">
+                                    
+                                    <!-- Collage item with pop-up -->
+                                    <div class="collage-thumb">                          
+                                        <a class="image-link" href="project01.html" onclick="redirectToProject('project01.html')">
+                                            
+                                            <img src="images/Jannat-Jubair-Amazon_Thumbain.jpg" alt="img" />
+                                            <div class="thumb-info">Amazon</div>
+                                        </a>
+                                    </div>
+                                    
+                                    <!-- Collage item with pop-up -->
+                                    <div class="collage-thumb">               
+                                        <a class="image-link" href="project02.html" onclick="redirectToProject('project02.html')">
+                                            <img src="images/nykaa edit.jpg" alt="img" />
+                                            <div class="thumb-info">Nykaa</div>
+                                        </a>
+                                    </div>
+                                    
+                                    <!-- Collage item with pop-up -->
+                                    <div class="collage-thumb">               
+                                        <a class="image-link" href="project03.html" onclick="redirectToProject('project03.html')">
+                                            <img src="images/hiranandani edit.jpg" alt="img" />
+                                            <div class="thumb-info">Hiranandani</div>
+                                        </a>
+                                    </div>
+                                    
+                                    <!-- Collage item with pop-up -->
+                                    <div class="collage-thumb">               
+                                        <a class="image-link" href="project04.html" onclick="redirectToProject('project04.html')">
+                                            <img src="images/VIP.jpg" alt="img" />
+                                            <div class="thumb-info">VIP Industries</div>
+                                        </a>
+                                    </div>
+                                    
+                                    <!-- Collage item with pop-up -->
+                                    <div class="collage-thumb">               
+                                        <a class="image-link" href="project05.html" onclick="redirectToProject('project05.html')">
+                                            <img src="images/Kaliedoscope edit.jpg" alt="img" />
+                                            <div class="thumb-info">Kaliedoscope</div>
+                                        </a>
+                                    </div>
+                                    
+                                   
+                                
+                                    
+                                </div>
+                                <!--/Collage -->
+                                
+                            </div> 
+                            <!--/Row -->                            
+                            
+                            
+                        
+                            
+                            
+                            
+                            <!-- Row -->
+                            <div class="content-row full row_padding_top row_padding_bottom row_padding_left row_padding_right light-section fadeout-element change-header-color" data-bgcolor="#f9f9f9" style=" padding: 20px; border-bottom:none; margin-top:-20px">
+                            
+                                <div class="list-rotator-wrapper">                                
+                                	<div class="list-rotator-title has-mask-fill" style="font-size:25px">[ Our Services ]</div>                                
+                                    <div class="list-rotator-height">                                    
+                                        <div class="list-rotator-pin">                                    
+                                            <ul class="list-rotator">
+                                                <li><em>Video</em> Production</li>
+                                                <li>Animation</li>
+                                                 <li><em>Digital</em><em></em> Marketing</li>
+                                                <li><em>Branding</em></li>
+                                                <li>CGI <em> and </em> VFX</li>
+                                                <li><em>Performance</em> Marketing</li>
+                                                <li><em>Campaign</em> Management</li>
+                                                <li><em>Content</em> & Copywriting</li>
+                                                <li><em>Creative</em> Designing</li>
+                                                <li><em>Website</em> Designing</li>
+                                            </ul>                                        
+                                        </div>                                        
+                                    </div>                                
+                                </div>
+                                
+                                <div class="one_fourth">
+                                	<p class="has-mask-fill no-margins"></p>
+                                </div>
+                                
+                                <div class="one_fourth">
+                                	<p class="has-mask-fill no-margins">Our Mantra</p>
+                                </div>
+                                
+                                <div class="one_half last">
+                                	<p class="has-opacity bigger"><span class="has-span-indent"></span> <span class="has-mask-fill">Let us show you what happens when marketing gets <span><bold>bold, brilliant</bold></span>, and a whole lot more <span><bold>magical</bold>.</span></span></p>
+
+                                    <p  class="has-opacity bigger">Because we work on just one philosophy: to create magic that makes your audience go “damnnn”.<p>
+                                </div>
+                                
+                            </div> 
+                            <!--/Row -->
+                            
+
+                            <!--/Row-->
+                            
+                           <!-- Row -->
+                            <div class="content-row full row_padding_top row_padding_left row_padding_right light-section change-header-color" data-bgcolor="#f9f9f9">
+
+                                <div class="marquee">
+                                    <div class="marquee__group">
+                                    <em><img src="images/uniqlo_global-1.png"/></em> 
+                                    <em><img src="images/Amazon.png"/></em>
+                                    <em><img src="images/SKYBAGS 1.png"/></em>
+                                    <em><img src="images/Coca Cola.png"/></em>
+                                    <em><img src="images/Disney.png"/></em>
+                                    <em><img src="images/Godrej.png"/></em>
+                                    <em><img src="images/Kohler.png"/></em>
+                                    <em><img src="images/Nykaa_Logo.png"/></em>
+                                    <em><img src="images/Facebook.png"/></em>
+                                      
+                                    </div>
+                                
+                                    <div aria-hidden="true" class="marquee__group">
+                                    <em><img src="images/uniqlo_global-1.png"/></em> 
+                                    <em><img src="images/Amazon.png"/></em>
+                                    <em><img src="images/SKYBAGS 1.png"/></em>
+                                    <em><img src="images/Coca Cola.png"/></em>
+                                    <em><img src="images/Disney.png"/></em>
+                                    <em><img src="images/Godrej.png"/></em>
+                                    <em><img src="images/Kohler.png"/></em>
+                                    <em><img src="images/Nykaa_Logo.png"/></em>
+                                    <em><img src="images/Facebook.png"/></em>
+                                      
+                                    </div>
+                                  </div>
+                                
+                                 
+                                                              
+                            </div> 
+                            <!--/Row -->
+                            
+                            
+                            
+                            
+                             <!-- Row -->
+                            <div class="content-row full row_padding_bottom dark-section text-align-center" data-bgcolor="#0c0c0c"  style="padding-top:40px">
+                                
+                                <h4 style="color:white"><em>Our </em> Blogs</h4>
+                                
+                                <hr>
+                                
+                                <div class="clapat-slider-wrapper content-slider small-looped-carousel has-animation disabled-slider-dots autocenter dark-cursor">
+        							<div class="clapat-slider">
+                                        <div class="clapat-slider-viewport">
+                                            <div class="clapat-slide"><div class="slide-img">
+                                            <a href="blog01.html"><img src="images/blog-img1.jpg" alt="Image Title" style="width:500px; height:260px"></a>
+                                            <figcaption style="font-size: 20px; font-weight: bold;">How to create a successful video production plan?
+                                    </figcaption></div></div>
+                                            <div class="clapat-slide"><div class="slide-img">
+                                            <a href="blog02.html"><img src="images/blog-img2.jpg" alt="Image Title" style="width:500px; height:260px; filter:grayscale(100%)"></a>
+                                            <figcaption style="font-size: 20px; font-weight: bold;">How AI is the New Secret Weapon of Top Video Productions?</figcaption></div></div>
+                                            <div class="clapat-slide"><div class="slide-img">
+                                            <a href="blog03.html"><img src="images/blog-img3.jpg" alt="Image Title" style="width:500px; height:260px; filter:grayscale(100%)"></a>
+                                            <figcaption style="font-size: 20px; font-weight: bold;">Elevating Your Vision: The Role of a Professional Video Production Company</figcaption></div></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="clapat-controls">
+                                        <div class="clapat-button-next slider-button-next"></div>
+                                        <div class="clapat-button-prev slider-button-prev"></div>
+                                        <div class="clapat-pagination"></div>
+                                    </div>
+                                </div>
+                                
+                            </div> 
+                            <!--/Row -->
+                            
+                            
+                            
+                            
+                        
+                        </div>
+                        <!--/Main Page Content -->
+                        
+                        
+                        
+                                
+                    </div>
+                    <!--/Main Content --> 
+                
+                </div>
+                <!--/Main -->
+                
+                <!-- Footer -->
+                <footer class="hidden">        	
+                    <div id="footer-container">
+                        
+                        <div id="backtotop" class="button-wrap left">
+                            <div class="icon-wrap parallax-wrap">
+                                <div class="button-icon parallax-element">
+                                    <i class="fa-solid fa-angle-up"></i>
+                                </div>
+                            </div>
+                            <div class="button-text sticky left"><span data-hover="Let's Go">Roll to Top</span></div> 
+                        </div>
+                        
+                        <div class="footer-middle">
+                            <div class="copyright">2023 © Snoozz Productions. All rights reserved. Developed by <a class="link" target="_blank" href="https://www.thegreyhawks.com" >Humans of the Grey Hawks</a>.</div>
+                        </div>
+                        
+                        <div class="socials-wrap">            	
+                            <div class="socials-icon"><i class="fa-solid fa-share-nodes"></i></div>
+                            <div class="socials-text">Follow Us</div>
+                            <ul class="socials">
+                                <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.facebook.com/snoozzofficial" target="_blank">Fb</a></span></li>
+                                <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.instagram.com/snoozzofficial/">In</a></span></li>
+                                <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.youtube.com/@Snoozzofficial">Yt</a></span></li>
+                                 <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.linkedin.com/company/snoozzofficial/">in</a></span></li>
+                            </ul>                
+                        </div>
+                        
+                    </div>
+                </footer>
+                <!--/Footer -->
+            
+        
+        	</div>
+            <!--/Content Scroll -->
+            
+            
+            <div id="app"></div>
+            
+            
+		</div>    
+        <!--/Page Content -->
+    
+		</div>
+	</main>
+    
+    
+    
+    
+    <div class="cd-cover-layer"></div>
+    <div id="magic-cursor">
+        <div id="ball">
+        	<div id="ball-drag-x"></div>
+            <div id="ball-drag-y"></div>
+        	<div id="ball-loader"></div>
+        </div>
+    </div>
+    <div id="clone-image">
+    	<div class="hero-translate"></div>
+    </div>
+    <div id="rotate-device"></div>
+    
+    <script>
+        function redirectToProject(projectUrl) {
+            window.location.href = projectUrl;
+        }
+    </script>
+    
+    
+     <script>
+        const control = document.getElementById("direction-toggle");
+const marquees = document.querySelectorAll(".marquee");
+const wrapper = document.querySelector(".wrapper");
+
+control.addEventListener("click", () => {
+  control.classList.toggle("toggle--vertical");
+  wrapper.classList.toggle("wrapper--vertical");
+  [...marquees].forEach((marquee) =>
+    marquee.classList.toggle("marquee--vertical")
+  );
+});
+
+    </script>
+    
+    
+		
+    <script src="js/jquery.min.js"></script>       
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Flip.min.js"></script>    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.4.0/smooth-scrollbar.js'></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpK1sWi3J3EbUOkF_K4-UHzi285HyFX5M&amp;sensor=false"></script>
+    
+    <script src="js/clapat.js"></script>
+	<script src="js/plugins.js"></script>
+    
+    <script src="js/common.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/scripts.js"></script>
+
+
+
+</body>
+
+</html>

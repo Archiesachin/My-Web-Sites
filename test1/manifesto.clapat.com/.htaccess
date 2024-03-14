@@ -1,0 +1,6 @@
+#remove html file extension https://snoozz.in/index.html
+#to https://snoozz.in/index
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME } !-d
+RewriteCond %{REQUEST_FILENAME }\.html -f
+RewriteRule ^(.*)$ %1.html [NC, L]
